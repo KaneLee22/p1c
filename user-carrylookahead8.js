@@ -3,7 +3,7 @@
       "type": "mux2",
       "connections": {
         "y": "lshift_1.q[31]",
-        "s": "b[4]",
+        "s": 1,
         "d0": "a[31]",
         "d1": "a[15]"
       },
