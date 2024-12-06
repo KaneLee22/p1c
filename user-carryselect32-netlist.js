@@ -3,7 +3,7 @@
     "type": "mux2",
     "connections": {
       "y": "sum_0",
-      "s": "sel_0",  // 確保 `sel_0` 是來自有效邏輯源
+      "s": "sel_0",  
       "d0": "S1",
       "d1": "S2"
     },
@@ -21,7 +21,7 @@
     "type": "mux2",
     "connections": {
       "y": "sum_1",
-      "s": "sel_1",  // 確保 `sel_1` 是來自有效邏輯源
+      "s": "sel_1",  
       "d0": "S1",
       "d1": "S2"
     },
@@ -39,7 +39,7 @@
     "type": "mux2",
     "connections": {
       "y": "sum_2",
-      "s": "sel_2",  // 確保 `sel_2` 是來自有效邏輯源
+      "s": "sel_2", 
       "d0": "S1",
       "d1": "S2"
     },
@@ -57,7 +57,7 @@
     "type": "mux2",
     "connections": {
       "y": "sum_3",
-      "s": "sel_3",  // 確保 `sel_3` 是來自有效邏輯源
+      "s": "sel_3", 
       "d0": "S1",
       "d1": "S2"
     },
@@ -78,7 +78,7 @@
       "b": "B",
       "cin": "Cin",
       "s": "S",
-      "cout": "Cout1_0"  // 確保進位連接到正確的進位信號
+      "cout": "Cout1_0" 
     },
     "properties": {
       "name": "FA1_0",
@@ -95,7 +95,7 @@
     "connections": {
       "a": "Cout1_0",
       "b": "Cout1_1",
-      "y": "sel_0"  // 使用進位邏輯生成的信號
+      "y": "sel_0" 
     },
     "properties": {
       "operation": "MUX",
@@ -113,7 +113,7 @@
     "connections": {
       "a": "Cout2_0",
       "b": "Cout2_1",
-      "y": "sel_1"  // 使用進位邏輯生成的信號
+      "y": "sel_1" 
     },
     "properties": {
       "operation": "MUX",
