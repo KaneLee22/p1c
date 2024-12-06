@@ -1,164 +1,72 @@
 [
   {
-    "type": "mux2",
+    "type": "carrylookahead8",
     "connections": {
-      "y": "lshift_1.q[31]",
-      "s": "mux_sel[31]",  // 更改為mux_sel信號
-      "d0": "a[31]",
-      "d1": "a[15]"
+      "A": "A",
+      "B": "B",
+      "S": "S",
+      "C_out": "C_out"
     },
     "properties": {
-      "name": "lshift_1.mux16[31]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[30]",
-      "s": "mux_sel[30]",  // 更改為mux_sel信號
-      "d0": "a[30]",
-      "d1": "a[14]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[30]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[29]",
-      "s": "mux_sel[29]",  // 更改為mux_sel信號
-      "d0": "a[29]",
-      "d1": "a[13]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[29]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[28]",
-      "s": "mux_sel[28]",  // 更改為mux_sel信號
-      "d0": "a[28]",
-      "d1": "a[12]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[28]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[27]",
-      "s": "mux_sel[27]",  // 更改為mux_sel信號
-      "d0": "a[27]",
-      "d1": "a[11]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[27]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[26]",
-      "s": "mux_sel[26]",  // 更改為mux_sel信號
-      "d0": "a[26]",
-      "d1": "a[10]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[26]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[25]",
-      "s": "mux_sel[25]",  // 更改為mux_sel信號
-      "d0": "a[25]",
-      "d1": "a[9]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[25]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[24]",
-      "s": "mux_sel[24]",  // 更改為mux_sel信號
-      "d0": "a[24]",
-      "d1": "a[8]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[24]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
-    }
-  },
-  {
-    "type": "mux2",
-    "connections": {
-      "y": "lshift_1.q[23]",
-      "s": "mux_sel[23]",  // 更改為mux_sel信號
-      "d0": "a[23]",
-      "d1": "a[7]"
-    },
-    "properties": {
-      "name": "lshift_1.mux16[23]",
-      "tcd": 2e-11,
-      "tpd": 1.2e-10,
-      "tr": 4500,
-      "tf": 2500,
-      "cin": 5e-15,
-      "size": 27
+      "adders": [
+        {
+          "type": "full_adder",
+          "name": "FA_gp[0]",
+          "connections": {
+            "A": "A[0]",
+            "B": "B[0]",
+            "C_in": "C_in",
+            "G": "G[0]",
+            "P": "P[0]",
+            "S": "S[0]"
+          }
+        },
+        {
+          "type": "full_adder",
+          "name": "FA_gp[1]",
+          "connections": {
+            "A": "A[1]",
+            "B": "B[1]",
+            "C_in": "C_in",
+            "G": "G[1]",
+            "P": "P[1]",
+            "S": "S[1]"
+          }
+        },
+        // Repeat for FA_gp[2] to FA_gp[7]
+        {
+          "type": "gpc",
+          "name": "gpc[0]",
+          "connections": {
+            "G_H": "G[0]",
+            "P_H": "P[0]",
+            "G_L": "G[1]",
+            "P_L": "P[1]",
+            "C_in": "C_in",
+            "G_HL": "G_HL[0]",
+            "P_HL": "P_HL[0]",
+            "C_H": "C_H[0]",
+            "C_L": "C_L[0]"
+          }
+        },
+        // Repeat for gpc[1] to gpc[3]
+        {
+          "type": "gpc",
+          "name": "gpc[4]",
+          "connections": {
+            "G_H": "G_HL[3]",
+            "P_H": "P_HL[3]",
+            "G_L": "G[7]",
+            "P_L": "P[7]",
+            "C_in": "C_in",
+            "G_HL": "G_HL[4]",
+            "P_HL": "P_HL[4]",
+            "C_H": "C_H[4]",
+            "C_L": "C_L[4]"
+          }
+        }
+      ]
     }
   }
+  
 ]
