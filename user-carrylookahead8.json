@@ -3,7 +3,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[31]",
-      "s": 1,
+      "s": "mux_sel[31]",  
       "d0": "a[31]",
       "d1": "a[15]"
     },
@@ -21,7 +21,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[30]",
-      "s": 1,
+      "s": "mux_sel[30]", 
       "d0": "a[30]",
       "d1": "a[14]"
     },
@@ -39,7 +39,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[29]",
-      "s": 1,
+      "s": "mux_sel[29]",  
       "d0": "a[29]",
       "d1": "a[13]"
     },
@@ -57,7 +57,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[28]",
-      "s": 1,
+      "s": "mux_sel[28]", 
       "d0": "a[28]",
       "d1": "a[12]"
     },
@@ -75,7 +75,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[27]",
-      "s": 1,
+      "s": "mux_sel[27]", 
       "d0": "a[27]",
       "d1": "a[11]"
     },
@@ -93,7 +93,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[26]",
-      "s": 1,
+      "s": "mux_sel[26]", 
       "d0": "a[26]",
       "d1": "a[10]"
     },
@@ -111,8 +111,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[25]",
-      "s": 1,
-      "d0": "a[25]",
+      "s": "mux_sel[25]",  
       "d1": "a[9]"
     },
     "properties": {
@@ -129,7 +128,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[24]",
-      "s": 1,
+      "s": "mux_sel[24]",  
       "d0": "a[24]",
       "d1": "a[8]"
     },
@@ -147,7 +146,7 @@
     "type": "mux2",
     "connections": {
       "y": "lshift_1.q[23]",
-      "s": 1,
+      "s": "mux_sel[23]",  
       "d0": "a[23]",
       "d1": "a[7]"
     },
