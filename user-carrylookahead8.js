@@ -21,19 +21,7 @@
             "S": "S[0]"
           }
         },
-        {
-          "type": "full_adder",
-          "name": "FA_gp[1]",
-          "connections": {
-            "A": "A[1]",
-            "B": "B[1]",
-            "C_in": "C_in",
-            "G": "G[1]",
-            "P": "P[1]",
-            "S": "S[1]"
-          }
-        },
-        // Repeat for FA_gp[2] to FA_gp[7]
+        // Repeat for FA_gp[1] to FA_gp[7]
         {
           "type": "gpc",
           "name": "gpc[0]",
@@ -67,6 +55,6 @@
         }
       ]
     }
-  }
-  
+  }  
+ 
 ]
